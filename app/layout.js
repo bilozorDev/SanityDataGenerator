@@ -9,7 +9,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body >{children}</body>
+      <body>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* We've used 3xl here, but feel free to try other max-widths based on your needs */}
+          <div className="mx-auto max-w-3xl mt-16"> {children}</div>
+        </div>
+      </body>
     </html>
   );
 }
